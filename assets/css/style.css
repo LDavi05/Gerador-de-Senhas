@@ -58,6 +58,19 @@ body {
   margin-top: 8px;
 }
 
+#charset_selector {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.radio_field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 #generate_btn {
   padding: 11px;
   background: #368a1d;
