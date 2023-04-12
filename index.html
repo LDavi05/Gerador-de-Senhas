@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <!-- JavaScript -->
+    <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+  <header id="titulo">GERADOR DE SENHAS</header>
+  
+  <main id="container">
+    <div id="caracter_qtd_selector">
+      <span>Quantidade de Caracteres: <span id="qtde_caracters"></span></span>
+      <input type="range" id="slider" min="5" max="25" value="15">
+    </div>
+    
+    <button id="generate_btn">Gerar Senha</button>
+  </main>
+  
+  <div class="password_area hide">
+    <span id="password_title">A senha gerada foi:</span>
+    <span id="password"></span>
+    <span id="copy_hint">Clique na senha para copiar <i class="fa-solid fa-arrow-up"></i></span>
+  </div>
+</body>
+</html>
