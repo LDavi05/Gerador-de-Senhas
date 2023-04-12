@@ -22,6 +22,24 @@
     <div id="caracter_qtd_selector">
       <span>Quantidade de Caracteres: <span id="qtde_caracters"></span></span>
       <input type="range" id="slider" min="5" max="25" value="15">
+      <div id="charset_selector">
+        <div class="radio_field">
+          <label for="tudo">Tudo</label>
+          <input type="radio" id="tudo" name="charset_sel" value="Tudo" checked>
+        </div>
+        <div class="radio_field">
+          <label for="letters">Letras</label>
+          <input type="radio" id="letters" name="charset_sel" value="Letras">
+        </div>
+        <div class="radio_field">
+          <label for="numbers">Números</label>
+          <input type="radio" id="numbers" name="charset_sel" value="Números">
+        </div>
+        <div class="radio_field">
+          <label for="symbols">Símbolos</label>
+          <input type="radio" id="symbols" name="charset_sel" value="Símbolos">
+        </div>
+      </div>
     </div>
     
     <button id="generate_btn">Gerar Senha</button>
