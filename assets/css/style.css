@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&family=Share+Tech+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Share Tech Mono', Sans-Serif;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  color: #fff;
+}
+
+#titulo {
+  font-size: 2.5rem;
+  font-family: 'Share Tech', Verdana;
+  font-weight: bold;
+  color: #368a1d;
+  margin-bottom: 25px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 480px;
+}
+
+#caracter_qtd_selector {
+  display: flex;
+  flex-direction: column;
+}
+
+#caracter_qtd_selector span {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#slider {
+  -webkit-appearance: none;
+  width: 100%;
+  border-radius: 5px;
+  background: #dfdfdf;
+  height: 18px;
+  outline: none;
+  margin-top: 8px;
+}
+
+#generate_btn {
+  padding: 11px;
+  background: #368a1d;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.password_area {
+  max-width: 480px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 24px;
+  gap: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+#password_title {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+#password {
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px;
+  transition: 0.5s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#password:hover {
+  transform: scale(1.05);
+}
+
+#generate_btn:hover {
+  box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.6);
+}
+
+#copy_hint {
+  position: relative;
+  top: 8px;
+  padding: 6px 8px;
+  background: rgb(15, 15, 15);
+  text-align: center;
+  font-size: 1rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  border-radius: 6px;
+}
+
+.password_area:hover #copy_hint {
+  visibility: visible;
+  bottom: 50px;
+  opacity: 1;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  #container {
+    max-width: 350px;
+  }
+}
